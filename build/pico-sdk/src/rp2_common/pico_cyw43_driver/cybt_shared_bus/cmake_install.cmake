@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/mqtt-client")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/leitor_adc")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,6 +40,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Users/ari_z/Desktop/Embarcatech/PROJETO LESTART/adc_reader/build/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/install_local_manifest.txt"
+  file(WRITE "C:/Users/ari_z/Desktop/Embarcatech/PROJETO LESTART/adc_test/build/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
